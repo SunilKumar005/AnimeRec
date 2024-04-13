@@ -1,0 +1,45 @@
+@keyframes cdp-in {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.cdp {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0;
+  z-index: 6;
+  margin: 50px 0;
+  animation: cdp-in 500ms ease both;
+  animation-timeout: 200ms;
+}
+.cdp_i {
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 250ms;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 3px 6px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 38px;
+  border: 2px solid #fff;
+  line-height: 38px;
+  padding: 0;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  display: inline-block;
+}
+.active{
+  background-color: #000;
+  color: #fff;
+}
+.disabled{
+  display: none;
+}
